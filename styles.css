@@ -847,7 +847,8 @@ main,
     grid-template-columns: 1fr;
   }
 
-  #research .feature-grid {
+  #research .feature-grid,
+  #engineering .feature-grid {
     grid-template-columns: 1fr;
   }
 
