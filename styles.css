@@ -847,6 +847,10 @@ main,
     grid-template-columns: 1fr;
   }
 
+  #research .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
   .nav-menu {
     display: none;
   }
