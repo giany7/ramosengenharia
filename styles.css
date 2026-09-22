@@ -842,6 +842,14 @@ main,
     grid-template-columns: 1fr;
   }
 
+  .nav-menu {
+    display: none;
+  }
+
+  .header-inner {
+    justify-content: center;
+  }
+
   .hero {
     padding-top: 60px;
   }
@@ -859,8 +867,7 @@ main,
   }
 
   .nav-menu {
-    justify-content: center;
-    gap: 12px 18px;
+    display: none;
   }
 
   .hero-copy h1 {
