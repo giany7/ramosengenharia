@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Systems engineer, researcher, and PhD focused on performance, reliability, and energy-efficient software systems." />
   <title>Vitor Ramos | Systems Engineer · Researcher · PhD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,65 +11,12 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Animated gears background -->
-  <div class="gears-background">
-    <!-- Large gears -->
-    <svg class="gear gear-xl" viewBox="0 0 120 120" width="120" height="120" style="--delay: 0s;">
-      <circle cx="60" cy="60" r="45" fill="none" stroke="currentColor" stroke-width="3"/>
-      <g>
-        <rect x="58" y="10" width="4" height="12" fill="currentColor"/>
-        <rect x="58" y="98" width="4" height="12" fill="currentColor"/>
-        <rect x="10" y="58" width="12" height="4" fill="currentColor"/>
-        <rect x="98" y="58" width="12" height="4" fill="currentColor"/>
-        <rect x="82" y="25" width="6" height="8" fill="currentColor" transform="rotate(45 85 29)"/>
-        <rect x="32" y="83" width="8" height="6" fill="currentColor" transform="rotate(45 36 86)"/>
-        <rect x="82" y="83" width="6" height="8" fill="currentColor" transform="rotate(45 85 87)"/>
-        <rect x="32" y="25" width="8" height="6" fill="currentColor" transform="rotate(45 36 28)"/>
-      </g>
-      <circle cx="60" cy="60" r="12" fill="none" stroke="currentColor" stroke-width="2"/>
-    </svg>
-
-    <!-- Medium gears -->
-    <svg class="gear gear-lg" viewBox="0 0 80 80" width="80" height="80" style="--delay: -2s;">
-      <circle cx="40" cy="40" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
-      <g>
-        <rect x="39" y="8" width="2" height="8" fill="currentColor"/>
-        <rect x="39" y="64" width="2" height="8" fill="currentColor"/>
-        <rect x="8" y="39" width="8" height="2" fill="currentColor"/>
-        <rect x="64" y="39" width="8" height="2" fill="currentColor"/>
-      </g>
-      <circle cx="40" cy="40" r="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    </svg>
-
-    <!-- Small gears -->
-    <svg class="gear gear-md" viewBox="0 0 60 60" width="60" height="60" style="--delay: -4s;">
-      <circle cx="30" cy="30" r="22" fill="none" stroke="currentColor" stroke-width="1.5"/>
-      <g>
-        <rect x="29" y="6" width="2" height="6" fill="currentColor"/>
-        <rect x="29" y="48" width="2" height="6" fill="currentColor"/>
-        <rect x="6" y="29" width="6" height="2" fill="currentColor"/>
-        <rect x="48" y="29" width="6" height="2" fill="currentColor"/>
-      </g>
-      <circle cx="30" cy="30" r="6" fill="none" stroke="currentColor" stroke-width="1"/>
-    </svg>
-
-    <!-- Tiny gears -->
-    <svg class="gear gear-sm" viewBox="0 0 40 40" width="40" height="40" style="--delay: -1s;">
-      <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="1"/>
-      <g>
-        <rect x="19" y="4" width="2" height="4" fill="currentColor"/>
-        <rect x="19" y="32" width="2" height="4" fill="currentColor"/>
-        <rect x="4" y="19" width="4" height="2" fill="currentColor"/>
-        <rect x="32" y="19" width="4" height="2" fill="currentColor"/>
-      </g>
-      <circle cx="20" cy="20" r="4" fill="none" stroke="currentColor" stroke-width="0.8"/>
-    </svg>
-  </div>
+  <div class="bg-grid"></div>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#home">Vitor Ramos</a>
-      <nav class="nav-menu">
+      <a class="brand" href="#home"><span class="brand-mark">VR</span>Vitor Ramos</a>
+      <nav class="nav-menu" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#selected-work">Selected Work</a>
         <a href="#research">Research</a>
@@ -84,22 +32,31 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Vitor Ramos</p>
-          <h1>Systems Engineer · Researcher · PhD</h1>
-          <p>I design and study software systems where <strong>performance, reliability, and efficiency</strong> matter.</p>
+          <p class="eyebrow">Systems Engineer · Researcher · PhD</p>
+          <h1>Building high-performance systems that scale with purpose.</h1>
+          <p class="hero-summary">I design and study software where performance, reliability, energy efficiency, and long-term maintainability meet real-world constraints.</p>
           <div class="hero-links">
             <a class="link-pill" href="https://github.com/VitorRamos" target="_blank" rel="noreferrer">GitHub</a>
             <a class="link-pill" href="https://scholar.google.com/citations?user=_maq48sAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
             <a class="link-pill" href="https://www.linkedin.com/in/vitorramos89/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="link-pill" href="#contact">CV</a>
           </div>
-        </div>
-        <div class="hero-panel">
-          <div class="panel-header">
-            <span class="panel-dot"></span>
-            <span class="panel-dot"></span>
-            <span class="panel-dot"></span>
+          <div class="hero-meta">
+            <span>Linux</span>
+            <span>C++</span>
+            <span>HPC</span>
+            <span>Energy-aware computing</span>
           </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Technology profile panel">
+          <div class="panel-header">
+            <span class="panel-dot dot-red"></span>
+            <span class="panel-dot dot-yellow"></span>
+            <span class="panel-dot dot-green"></span>
+            <span class="panel-title">system.profile</span>
+          </div>
+
           <div class="panel-body">
             <div class="panel-badges">
               <span>Linux</span>
@@ -107,6 +64,22 @@
               <span>HPC</span>
               <span>Energy</span>
             </div>
+
+            <div class="status-stack">
+              <div class="status-row">
+                <span>CPU</span>
+                <div class="status-bar"><i style="--w: 82%;"></i></div>
+              </div>
+              <div class="status-row">
+                <span>Efficiency</span>
+                <div class="status-bar"><i style="--w: 91%;"></i></div>
+              </div>
+              <div class="status-row">
+                <span>Scale</span>
+                <div class="status-bar"><i style="--w: 74%;"></i></div>
+              </div>
+            </div>
+
             <div class="panel-stats">
               <div>
                 <strong>14+</strong>
@@ -128,13 +101,16 @@
 
     <section class="section-block" id="selected-work">
       <div class="container">
-        <span class="section-label">Selected Work</span>
-        <h2>Selected Work</h2>
-        <article class="project-card">
+        <div class="section-heading">
+          <span class="section-label">Selected Work</span>
+          <h2>Selected Work</h2>
+        </div>
+
+        <article class="project-card reveal">
+          <div class="card-kicker">Systems Modernization</div>
           <h3>Windows → Linux: Large-Scale C++ Modernization</h3>
-          <p>Migrating a large, mature Windows-based C++ codebase to Linux while establishing a long-term cross-platform engineering strategy.</p>
-          <p>The work involves platform architecture, build system modernization, development infrastructure, CI/CD automation, containerization, and infrastructure as code.</p>
-          <p><strong>Focus</strong></p>
+          <p>Migrating a mature Windows-based C++ codebase to Linux while establishing a long-term cross-platform engineering strategy.</p>
+          <p>The work covers architecture, build infrastructure, CI/CD pipelines, containers, environment automation, and software delivery for large-scale production systems.</p>
           <div class="skill-pill-grid">
             <span class="skill-pill">C++</span>
             <span class="skill-pill">Linux</span>
@@ -144,11 +120,12 @@
             <span class="skill-pill">Infrastructure</span>
           </div>
         </article>
-        <article class="project-card">
+
+        <article class="project-card reveal">
+          <div class="card-kicker">HPC & Energy Efficiency</div>
           <h3>Energy-Efficient High-Performance Computing</h3>
-          <p>During my PhD at UMONS, I investigated how computational workloads can be executed more efficiently by modeling and optimizing the relationship between <strong>performance, resource utilization, and energy consumption</strong>.</p>
-          <p>My research explored analytical energy models, workload characterization, resource allocation, Dynamic Voltage and Frequency Scaling (DVFS), and Dynamic Power Management (DPM) for high-performance computing environments.</p>
-          <p><strong>Focus</strong></p>
+          <p>During my PhD, I studied how computational workloads can be executed more efficiently by modeling and optimizing the relationship between performance, resource usage, and energy consumption.</p>
+          <p>My research included analytical energy models, workload characterization, resource allocation, DVFS, and DPM for shared-memory parallel systems.</p>
           <div class="skill-pill-grid">
             <span class="skill-pill">HPC</span>
             <span class="skill-pill">Performance Modeling</span>
@@ -158,11 +135,12 @@
             <span class="skill-pill">Parallel Computing</span>
           </div>
         </article>
-        <article class="project-card">
+
+        <article class="project-card reveal">
+          <div class="card-kicker">Parallel Analysis</div>
           <h3>Parallel Performance Analysis</h3>
-          <p>Research and tooling for understanding the scalability and behavior of parallel applications through performance analysis and hardware performance counters.</p>
-          <p>This work included automated assessment of parallel scalability, application fingerprinting, modeling, comparison, and visualization.</p>
-          <p><strong>Focus</strong></p>
+          <p>Research and tooling for understanding the scalability and behavior of parallel applications through performance counters and measurement-based analysis.</p>
+          <p>This work included automated assessment of parallel scalability, workload fingerprinting, comparison, and visualization.</p>
           <div class="skill-pill-grid">
             <span class="skill-pill">HPC</span>
             <span class="skill-pill">Parallel Computing</span>
@@ -177,65 +155,71 @@
 
     <section class="section-block section-alt" id="research">
       <div class="container">
-        <span class="section-label">Research</span>
-        <h2>Research</h2>
-        <article class="project-card">
+        <div class="section-heading">
+          <span class="section-label">Research</span>
+          <h2>Research</h2>
+        </div>
+
+        <article class="project-card reveal">
+          <div class="card-kicker">PhD</div>
           <h3>PhD in Engineering Sciences and Technology</h3>
           <p><strong>University of Mons (UMONS), Belgium</strong><br>2018 — 2024</p>
-          <p>My doctoral research focused on <strong>energy-efficient high-performance computing</strong>, with an emphasis on understanding and modeling the relationship between workload characteristics, computational resources, performance, and energy consumption.</p>
-          <p>The broader goal was to develop approaches that enable computing systems to make more efficient use of their available resources without sacrificing application performance.</p>
+          <p>My doctoral research focused on energy-efficient high-performance computing and how workload characteristics, system resources, and execution strategies influence performance and power consumption.</p>
+          <p>The core objective was to create approaches that allow computational systems to use resources more intelligently without compromising application performance.</p>
         </article>
-        <div class="feature-grid">
+
+        <div class="feature-grid reveal">
           <article class="feature-card">
             <h3>Systems & Operating Systems</h3>
-            <p>Low-level software, Linux, system behavior, resource management, and infrastructure.</p>
+            <p>Low-level software, Linux, system behavior, resource management, and infrastructure design.</p>
           </article>
           <article class="feature-card">
             <h3>High-Performance Computing</h3>
-            <p>Parallel applications, scalability, performance analysis, and computational workloads.</p>
+            <p>Parallel applications, scalability, performance analysis, and efficient workload execution.</p>
           </article>
           <article class="feature-card">
             <h3>Performance Engineering</h3>
-            <p>Understanding system behavior, identifying bottlenecks, and designing efficient software systems.</p>
+            <p>Understanding bottlenecks, measuring system behavior, and making software more effective.</p>
           </article>
           <article class="feature-card">
             <h3>Energy-Efficient Computing</h3>
-            <p>Energy modeling, resource allocation, DVFS, DPM, and efficiency-aware computing.</p>
+            <p>Energy modeling, DVFS, DPM, efficient resource allocation, and sustainable software design.</p>
           </article>
         </div>
-        <div class="section-copy" style="margin-top:1.5rem;">
-          <h3>Selected Research</h3>
-          <article class="project-card" style="padding:1.25rem; margin-top:1rem;">
+
+        <div class="section-copy" style="margin-top: 2rem;">
+          <h3>Selected Publications</h3>
+          <article class="publication-item reveal">
             <h4>A Minimally Intrusive Approach for Automatic Assessment of Parallel Performance Scalability of Shared-Memory HPC Applications</h4>
             <p><em>MDPI Electronics · 2022</em></p>
-            <p>Research on automatically assessing the scalability of parallel applications while minimizing the intrusion introduced by the analysis itself.</p>
           </article>
-          <article class="project-card" style="padding:1.25rem; margin-top:1rem;">
+          <article class="publication-item reveal">
             <h4>Analytical Energy Model Parametrized by Workload, Clock Frequency and Number of Active Cores for Shared-Memory High-Performance Computing Applications</h4>
             <p><em>MDPI Energies · 2022</em></p>
-            <p>An analytical approach to modeling energy consumption based on workload characteristics, clock frequency, and active computational resources.</p>
           </article>
-          <article class="project-card" style="padding:1.25rem; margin-top:1rem;">
+          <article class="publication-item reveal">
             <h4>An Accurate Tool for Modeling, Fingerprinting, Comparison, and Clustering of Parallel Applications Based on Performance Counters</h4>
             <p><em>IEEE IPDPS · 2019</em></p>
-            <p>Research into characterizing and comparing parallel applications through hardware performance counters and computational behavior.</p>
           </article>
-          <article class="project-card" style="padding:1.25rem; margin-top:1rem;">
+          <article class="publication-item reveal">
             <h4>Energy-Optimal Configurations for Single-Node HPC Applications</h4>
             <p><em>HPCS · 2019</em></p>
-            <p>Investigation of energy-efficient configurations for high-performance computing workloads.</p>
           </article>
-          <p style="margin-top:1rem; color: var(--muted);"><a class="inline-link" href="https://scholar.google.com/citations?user=_maq48sAAAAJ&hl=en" target="_blank" rel="noreferrer">View all publications on Google Scholar →</a></p>
+          <p class="publication-link"><a class="inline-link" href="https://scholar.google.com/citations?user=_maq48sAAAAJ&hl=en" target="_blank" rel="noreferrer">View all publications on Google Scholar →</a></p>
         </div>
       </div>
     </section>
 
     <section class="section-block" id="engineering">
       <div class="container">
-        <span class="section-label">Engineering</span>
-        <h2>Engineering</h2>
-        <p class="section-copy">My engineering work sits close to the system level, where software meets the operating system, hardware, infrastructure, and production environment.</p>
-        <div class="feature-grid">
+        <div class="section-heading">
+          <span class="section-label">Engineering</span>
+          <h2>Engineering</h2>
+        </div>
+
+        <p class="section-copy reveal">My engineering work sits close to the system level, where software meets operating systems, hardware constraints, infrastructure, and production realities.</p>
+
+        <div class="feature-grid reveal">
           <article class="feature-card">
             <h3>Systems</h3>
             <ul>
@@ -278,64 +262,69 @@
 
     <section class="section-block section-alt" id="experience">
       <div class="container">
-        <span class="section-label">Experience</span>
-        <h2>Experience</h2>
-        <article class="project-card">
+        <div class="section-heading">
+          <span class="section-label">Experience</span>
+          <h2>Experience</h2>
+        </div>
+
+        <article class="project-card reveal">
+          <div class="card-kicker">2022 — Present</div>
           <h3>Senior Software Engineer</h3>
-          <p><strong>OMP</strong><br>2022 — Present</p>
-          <p>Working on large-scale software engineering with a strong focus on Linux, C++, cross-platform systems, and development infrastructure.</p>
-          <p><strong>Key areas of work include:</strong></p>
+          <p><strong>OMP</strong></p>
+          <p>Working on large-scale software engineering with a strong focus on Linux, C++, cross-platform systems, and production infrastructure.</p>
           <ul>
             <li>Migrating a large Windows C++ codebase to Linux</li>
             <li>Defining cross-platform engineering strategies</li>
-            <li>Modernizing build and integration workflows with CMake</li>
+            <li>Modernizing build and integration flows with CMake</li>
             <li>Developing automated CI/CD pipelines</li>
             <li>Building and scaling Linux-based development environments</li>
-            <li>Developing internal engineering tooling</li>
-            <li>Applying containerization and infrastructure as code</li>
-            <li>Reducing technical and operational risk in a large software ecosystem</li>
+            <li>Reducing technical risk in a large software ecosystem</li>
           </ul>
         </article>
-        <article class="project-card">
+
+        <article class="project-card reveal">
+          <div class="card-kicker">2018 — 2022</div>
           <h3>PhD Researcher</h3>
-          <p><strong>University of Mons · Belgium</strong><br>2018 — 2022</p>
-          <p>Research in energy-efficient High-Performance Computing, focusing on theoretical energy consumption models and resource allocation strategies for computational clusters.</p>
-          <p><strong>Research included:</strong></p>
+          <p><strong>University of Mons · Belgium</strong></p>
+          <p>Research in energy-efficient high-performance computing with emphasis on modeling power and performance trade-offs in computational workloads.</p>
           <ul>
             <li>Energy consumption modeling</li>
             <li>Performance analysis</li>
             <li>Workload characterization</li>
             <li>Resource allocation</li>
-            <li>Dynamic Voltage and Frequency Scaling</li>
-            <li>Dynamic Power Management</li>
+            <li>DVFS / DPM</li>
             <li>Parallel computing</li>
           </ul>
         </article>
-        <article class="project-card">
+
+        <article class="project-card reveal">
+          <div class="card-kicker">2017</div>
           <h3>Systems Administrator & Researcher</h3>
-          <p><strong>NPAD · Federal University of Rio Grande do Norte</strong><br>2017</p>
-          <p>Worked with the administration of a high-performance computing environment while developing tools to improve the experience of cluster users.</p>
-          <p>This was an early intersection of <strong>Linux systems administration, HPC infrastructure, automation, and software development</strong>.</p>
+          <p><strong>NPAD · Federal University of Rio Grande do Norte</strong></p>
+          <p>Worked with HPC cluster administration and tools to improve the experience of researchers and users in a Linux-based environment.</p>
         </article>
       </div>
     </section>
 
     <section class="section-block" id="recognition">
       <div class="container">
-        <span class="section-label">Recognition</span>
-        <h2>Recognition</h2>
-        <div class="recognition-grid">
+        <div class="section-heading">
+          <span class="section-label">Recognition</span>
+          <h2>Recognition</h2>
+        </div>
+
+        <div class="recognition-grid reveal">
           <article class="recognition-card">
-            <h4>ACM ICPC World Finals — Honorable Mention</h4>
-            <p><strong>39th Annual ACM International Collegiate Programming Contest World Finals</strong><br>2014 · Natal, Brazil</p>
+            <h4>ACM ICPC World Finals</h4>
+            <p><strong>Honorable Mention</strong><br>39th Annual ACM ICPC World Finals · 2014</p>
           </article>
           <article class="recognition-card">
             <h4>Innovation Award</h4>
-            <p><strong>Hands-on AI Workshop · Mons, Belgium</strong><br>2020</p>
+            <p><strong>Hands-on AI Workshop</strong><br>2020 · Mons, Belgium</p>
           </article>
           <article class="recognition-card">
-            <h4>IEEE Very Small Size Soccer — Quarterfinalist</h4>
-            <p><strong>Latin American Robotics Competition</strong><br>2016 · Recife, Brazil</p>
+            <h4>IEEE Very Small Size Soccer</h4>
+            <p><strong>Quarterfinalist</strong><br>Latin American Robotics Competition · 2016</p>
           </article>
         </div>
       </div>
@@ -343,19 +332,25 @@
 
     <section class="section-block section-alt" id="registered-software">
       <div class="container">
-        <span class="section-label">Registered Software</span>
-        <h2>Registered Software</h2>
-        <div class="work-grid">
+        <div class="section-heading">
+          <span class="section-label">Registered Software</span>
+          <h2>Registered Software</h2>
+        </div>
+
+        <div class="work-grid reveal">
           <article class="project-card">
+            <div class="card-kicker">INPI Brazil</div>
             <h3>PaScal Viewer</h3>
             <p>A scientific software system for visualization of parallel scalability trends.</p>
-            <p><strong>INPI Brazil · BR 51 2019 002345-5</strong></p>
+            <p><strong>BR 51 2019 002345-5</strong></p>
             <p>Developed using Python and Django.</p>
           </article>
+
           <article class="project-card">
+            <div class="card-kicker">INPI Brazil</div>
             <h3>PaScal Analyser</h3>
             <p>A scientific software system for analysis of parallel applications.</p>
-            <p><strong>INPI Brazil · BR 51 2019 002391-9</strong></p>
+            <p><strong>BR 51 2019 002391-9</strong></p>
             <p>Developed using C++.</p>
           </article>
         </div>
@@ -364,20 +359,26 @@
 
     <section class="section-block" id="education">
       <div class="container">
-        <span class="section-label">Education</span>
-        <h2>Education</h2>
-        <div class="experience-grid">
+        <div class="section-heading">
+          <span class="section-label">Education</span>
+          <h2>Education</h2>
+        </div>
+
+        <div class="experience-grid reveal">
           <article class="project-card">
+            <div class="card-kicker">2018 — 2024</div>
             <h3>Doctor of Philosophy — Engineering Sciences and Technology</h3>
-            <p><strong>University of Mons · Belgium</strong><br>2018 — 2024</p>
+            <p><strong>University of Mons · Belgium</strong></p>
           </article>
           <article class="project-card">
+            <div class="card-kicker">2016 — 2018</div>
             <h3>Bachelor's Degree — Computer Engineering</h3>
-            <p><strong>Federal University of Rio Grande do Norte · Brazil</strong><br>2016 — 2018</p>
+            <p><strong>Federal University of Rio Grande do Norte · Brazil</strong></p>
           </article>
           <article class="project-card">
+            <div class="card-kicker">2013 — 2016</div>
             <h3>Bachelor's Degree — Science and Technology</h3>
-            <p><strong>Federal University of Rio Grande do Norte · Brazil</strong><br>2013 — 2016</p>
+            <p><strong>Federal University of Rio Grande do Norte · Brazil</strong></p>
           </article>
         </div>
       </div>
@@ -385,24 +386,27 @@
 
     <section class="section-block section-alt" id="values">
       <div class="container">
-        <span class="section-label">A Few Things I Care About</span>
-        <h2>A Few Things I Care About</h2>
-        <div class="research-grid">
+        <div class="section-heading">
+          <span class="section-label">Principles</span>
+          <h2>A Few Things I Care About</h2>
+        </div>
+
+        <div class="research-grid reveal">
           <article class="research-card">
             <h4>Understand the system.</h4>
-            <p>Abstractions are useful, but understanding what happens underneath them is often essential when reliability and performance matter.</p>
+            <p>Abstractions are useful, but understanding what happens underneath them is essential when performance and reliability matter.</p>
           </article>
           <article class="research-card">
             <h4>Measure before optimizing.</h4>
-            <p>Performance decisions should be driven by evidence, measurements, and an understanding of system behavior.</p>
+            <p>Good engineering starts with evidence, metrics, and a deep understanding of actual system behavior.</p>
           </article>
           <article class="research-card">
             <h4>Build for the long term.</h4>
-            <p>Software that works today is not necessarily software that can be maintained, evolved, and operated for years.</p>
+            <p>Software that works today is not enough; it must be maintainable, testable, and operable for years.</p>
           </article>
           <article class="research-card">
             <h4>Bridge research and engineering.</h4>
-            <p>Interesting ideas become valuable when they can survive contact with real systems, real constraints, and real users.</p>
+            <p>Interesting ideas become valuable when they survive real systems, constraints, and user demands.</p>
           </article>
         </div>
       </div>
@@ -411,27 +415,32 @@
     <section class="section-block" id="contact">
       <div class="container contact-grid">
         <div>
-          <span class="section-label">Let's Talk</span>
-          <h2>Let's Talk</h2>
-          <p>Have an interesting systems problem, research question, or engineering challenge?</p>
-          <p><strong>Get in touch.</strong></p>
+          <div class="section-heading compact">
+            <span class="section-label">Let's Talk</span>
+            <h2>Let's Talk</h2>
+          </div>
+          <p class="section-copy">Have an interesting systems problem, research challenge, or engineering opportunity?</p>
+          <p class="section-copy emphasis"><strong>Get in touch.</strong></p>
+
           <div class="contact-details">
             <div>
               <strong>Email</strong>
-              <p><a class="inline-link" href="mailto:vitor.ramos@example.com">vitor.ramos@example.com</a></p>
+              <p><a class="inline-link" href="mailto:hello@vitorramos.dev">hello@vitorramos.dev</a></p>
             </div>
             <div>
               <strong>Location</strong>
               <p>São Paulo, Brazil</p>
             </div>
           </div>
+
           <div class="about-links contact-links">
             <a class="link-pill" href="https://github.com/VitorRamos" target="_blank" rel="noreferrer">GitHub</a>
             <a class="link-pill" href="https://scholar.google.com/citations?user=_maq48sAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
             <a class="link-pill" href="https://www.linkedin.com/in/vitorramos89/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
-        <form class="contact-form" action="https://example.com/submit" method="post">
+
+        <form class="contact-form reveal" action="#" method="post">
           <label>
             Name
             <input type="text" name="name" placeholder="Your name" required />
@@ -452,7 +461,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Vitor Ramos. Systems Engineer · Researcher · PhD.</p>
+      <p>© <span id="year"></span> Vitor Ramos. Systems Engineer · Researcher · PhD.</p>
       <div class="footer-links">
         <a href="#home">Top</a>
         <a href="#contact">Contact</a>
