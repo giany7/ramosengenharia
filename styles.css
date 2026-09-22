@@ -596,12 +596,19 @@ main,
   margin-top: 26px;
 }
 
-.feature-grid {
+#research .feature-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   align-items: stretch;
+}
+
+#engineering .feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .research-grid {
@@ -616,6 +623,22 @@ main,
 .recognition-card,
 .research-card {
   padding: 24px 22px;
+}
+
+#research .feature-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+}
+
+#research .feature-card h3 {
+  min-height: 58px;
+  margin: 0;
+}
+
+#research .feature-card p {
+  margin: 14px 0 0;
+  flex: 1;
 }
 
 .research-card {
