@@ -615,6 +615,10 @@ main,
   margin-right: 0;
 }
 
+#registered-software .work-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .research-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   max-width: 1280px;
@@ -838,18 +842,24 @@ main,
 
 @media (max-width: 980px) {
   .hero-grid,
-  .contact-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
   .feature-grid,
   .recognition-grid,
   .work-grid,
   .experience-grid,
-  .research-grid {
-    grid-template-columns: 1fr;
+  .research-grid,
+  #research .feature-grid,
+  #engineering .feature-grid,
+  #registered-software .work-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  #research .feature-grid,
-  #engineering .feature-grid {
-    grid-template-columns: 1fr;
+  .hero-panel {
+    max-width: 520px;
+    margin: 32px auto 0;
   }
 
   .nav-menu {
@@ -867,6 +877,14 @@ main,
   .section-block {
     padding: 88px 0;
   }
+
+  .project-card,
+  .feature-card,
+  .recognition-card,
+  .research-card,
+  .contact-form {
+    padding: 24px 22px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -880,8 +898,66 @@ main,
     display: none;
   }
 
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+  }
+
   .hero-copy h1 {
     font-size: clamp(2.4rem, 11vw, 3.6rem);
+  }
+
+  .hero-summary {
+    font-size: 1rem;
+  }
+
+  .hero-panel {
+    max-width: 100%;
+  }
+
+  .feature-grid,
+  .recognition-grid,
+  .work-grid,
+  .experience-grid,
+  .research-grid,
+  #research .feature-grid,
+  #engineering .feature-grid,
+  #registered-software .work-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(1.9rem, 7vw, 2.8rem);
+  }
+
+  .section-copy h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.55rem;
+  }
+
+  .project-card,
+  .feature-card,
+  .recognition-card,
+  .research-card,
+  .contact-form {
+    padding: 22px 18px;
+  }
+
+  .link-pill {
+    padding: 0 14px;
+    font-size: 0.72rem;
+  }
+
+  .publication-item {
+    padding: 18px 16px;
+  }
+
+  .contact-form {
+    min-height: auto;
   }
 
   .panel-stats {
@@ -895,5 +971,17 @@ main,
   .footer-inner {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(var(--container), calc(100% - 28px));
+  }
+
+  .hero-links,
+  .hero-meta,
+  .footer-links {
+    gap: 10px;
   }
 }
