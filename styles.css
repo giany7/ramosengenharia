@@ -588,10 +588,24 @@ main,
   margin-top: 26px;
 }
 
+.research-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: stretch;
+}
+
 .feature-card,
 .recognition-card,
 .research-card {
   padding: 24px 22px;
+}
+
+.research-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
 }
 
 .feature-card h3 {
@@ -601,6 +615,10 @@ main,
 .feature-card p,
 .research-card p {
   margin: 14px 0 0;
+}
+
+.research-card p {
+  flex: 1;
 }
 
 .publication-item {
