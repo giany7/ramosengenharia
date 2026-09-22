@@ -38,6 +38,9 @@ body {
     linear-gradient(180deg, #010910 0%, #020b16 30%, #01070d 100%);
   color: var(--text);
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -440,7 +443,10 @@ main,
 }
 
 .section-heading {
-  margin-bottom: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
 }
 
 .section-heading h2 {
@@ -451,11 +457,16 @@ main,
   color: var(--text);
 }
 
+.section-heading.compact {
+  margin-bottom: 16px;
+}
+
 .section-copy {
   max-width: 760px;
   color: var(--muted);
   font-size: 1rem;
   line-height: 1.8;
+  margin: 0;
 }
 
 .section-copy.emphasis {
@@ -478,8 +489,15 @@ main,
 
 .project-card {
   padding: 28px 26px;
-  margin-top: 26px;
+  margin-top: 18px;
   transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:first-of-type,
+.feature-card:first-of-type,
+.recognition-card:first-of-type,
+.research-card:first-of-type {
+  margin-top: 0;
 }
 
 .project-card:hover,
@@ -661,6 +679,7 @@ main,
   display: grid;
   gap: 16px;
   padding: 26px;
+  min-height: 100%;
 }
 
 .contact-form label {
