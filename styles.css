@@ -469,6 +469,14 @@ main,
   margin: 0;
 }
 
+.section-copy h3 {
+  margin: 0 0 18px;
+  color: var(--text);
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+  letter-spacing: -0.05em;
+  line-height: 1.2;
+}
+
 .section-copy.emphasis {
   margin-top: 10px;
   font-size: 1.15rem;
@@ -586,6 +594,14 @@ main,
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   margin-top: 26px;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: stretch;
 }
 
 .research-grid {
