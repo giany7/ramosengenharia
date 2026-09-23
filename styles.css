@@ -230,6 +230,12 @@ main,
   gap: 42px;
 }
 
+.hero-copy,
+.hero-panel {
+  min-width: 0;
+  width: 100%;
+}
+
 .eyebrow,
 .section-label {
   margin: 0 0 16px;
@@ -914,6 +920,8 @@ main,
 
   .hero-panel {
     max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .feature-grid,
